@@ -14,14 +14,14 @@ import {
 
 
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle, isOpen}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">dolla</NavLogo>
-          <MobileIcon onClick={toggle} >
-            <FaBars />
+          <NavLogo to="/">Nathan Schrader</NavLogo>
+          <MobileIcon onClick={toggle} isOpen={isOpen} >
+            {isOpen ? null : <FaBars/>}
           </MobileIcon>
           <NavMenu>
             <NavItem>
