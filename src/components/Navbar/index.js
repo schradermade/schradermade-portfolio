@@ -3,7 +3,9 @@ import { FaBars } from 'react-icons/fa';
 import { 
   Nav, 
   NavbarContainer, 
+  NavLogoContainer,
   NavLogo,
+  NavSubLogo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -19,13 +21,19 @@ const Navbar = ({toggle, isOpen}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Nathan Schrader</NavLogo>
+          <NavLogoContainer>
+            <NavLogo to="/">Nathan Schrader</NavLogo>
+            <NavSubLogo to="/">REACT DEVELOPER</NavSubLogo>
+          </NavLogoContainer>
           <MobileIcon onClick={toggle} isOpen={isOpen} >
             {isOpen ? null : <FaBars/>}
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="techskills">Technical Skills</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="portfolio">Portfolio</NavLinks>
