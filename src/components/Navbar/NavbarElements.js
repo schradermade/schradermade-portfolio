@@ -52,8 +52,22 @@ export const NavLogo = styled(LinkR)`
     color: #5271FE;
   }
 
+  @media screen and (max-width: 950px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: 830px) {
+    font-size: 1.75rem;
+  }
   @media screen and (max-width: 500px) {
-    font-size: 2rem;
+    font-size: 2.0rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 1.25rem;
+    margin-left: 0;
   }
 `;
 
@@ -61,7 +75,7 @@ export const NavSubLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   display: flex;
   align-items: center;
   margin-top: 5px;
@@ -74,8 +88,22 @@ export const NavSubLogo = styled(LinkR)`
     color: #fff;
   }
 
+  @media screen and (max-width: 950px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 830px) {
+    font-size: 1.25rem;
+  }
   @media screen and (max-width: 500px) {
-    font-size: .75;
+    font-size: 1.0rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1.0rem;
+    margin-left: 0;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: .75rem;
+    margin-left: 0;
   }
 `;
 
@@ -96,6 +124,10 @@ export const MobileIcon = styled.div`
   &:hover {
     // color: white;
     opacity: 75%;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 1.75rem;
   }
 `;
 
@@ -125,6 +157,9 @@ export const NavLinks = styled(LinkS)`
   font-size: 1.5rem;
 
   @media screen and (max-width: 1000pxx) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 950px) {
     font-size: 1rem;
   }
 
