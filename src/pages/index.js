@@ -10,7 +10,7 @@ const Home = () => {
     setIsOpen(!isOpen)
   }
 
-  const [isBio, setIsBio] = useState(false);
+  const [isBio, setIsBio] = useState(true);
   const isBioToggle = () => {
     if (!isBio) {
     setIsBio(!isBio)

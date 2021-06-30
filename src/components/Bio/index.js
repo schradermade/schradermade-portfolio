@@ -10,7 +10,7 @@ const Bio = () => {
   return (
     <>
       <BioContainer>
-        This is my Bio!
+        Hi, I'm Nathan, a front end engineer specializing in ReactJS web and mobile applications. 
       </BioContainer>
     </>
   )
