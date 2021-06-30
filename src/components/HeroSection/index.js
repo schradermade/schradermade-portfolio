@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import Video from '../../videos/video.mp4';
 import Image from '../../images/background.jpg';
 import { Button } from '../ButtonElement';
+import Bio from '../Bio';
+import Portfolio from '../Portfolio';
+import TechSkills from '../TechSkills';
+
 import { 
   HeroContainer,
   HeroBg,
@@ -14,6 +18,7 @@ import {
   ArrowRight,
   PicBg,
 } from './HeroElement';
+import Contact from '../Contact';
 
 const HeroSection = ({
   onHover1,
@@ -32,10 +37,10 @@ const HeroSection = ({
       <HeroContent>
         <HeroH1
         >
-          {isBio ? "I'm Nathan. I'm a React Developer currently engaged as a freelance professional." : null}
-          {isPortfolio ? "Under Construction!" : null}
-          {isTech ? "JavaScript, ReactJS, Material-UI, NextJS, GraphQL" : null}
-          {isContact ? "natecschrader@gmail.com" : null}
+          {isBio ? <Bio /> : null}
+          {isTech ? <TechSkills /> : null}
+          {isPortfolio ? <Portfolio /> : null}
+          {isContact ? <Contact /> : null}
         </HeroH1>
         <HeroP>
           This site is under active construction. More awesomeness to come!
