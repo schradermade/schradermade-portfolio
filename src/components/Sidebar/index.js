@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { 
   SidebarContainer,
   Icon,
@@ -11,7 +11,21 @@ import {
 } from './SidebarElements';
 
 
-const Sidebar = ({isOpen, toggle}) => {
+const Sidebar = ({
+  isOpen, toggle, 
+  isBioToggle,
+  isTechToggle,
+  isPortfolioToggle,
+  isContactToggle,
+
+}) => {
+
+  // const [about, setAbout] = useState(false);
+
+  // const aboutHover = () => {
+  //   setAbout(!about)
+  // }
+
   return (
     <>
       <SidebarContainer 
@@ -25,24 +39,36 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
           <SidebarWrapper>
             <SidebarMenu>
-              <SidebarLink to="about" onClick={toggle}>
-                About
+              <SidebarLink 
+                to="about" 
+                onClick={isBioToggle}
+              >
+                Bio
               </SidebarLink>
-              <SidebarLink to="techskills" onClick={toggle}>
+              <SidebarLink 
+                to="techskills"
+                onClick={isTechToggle}
+              >
                 Technical Skills
               </SidebarLink>
-              <SidebarLink to="portfolio" onClick={toggle}>
+              <SidebarLink 
+                to="portfolio" 
+                onClick={isPortfolioToggle}
+              >
                 Portfolio
               </SidebarLink>
-              <SidebarLink to="contact" onClick={toggle}>
+              <SidebarLink 
+                to="contact" 
+                onClick={isContactToggle}
+              >
                 Contact Me
               </SidebarLink>
             </SidebarMenu>
-            <SideBtnWrap>
+            {/* <SideBtnWrap>
               <SidebarRoute to="/signin" onClick={toggle}>
                 Sign In
               </SidebarRoute>
-            </SideBtnWrap>
+            </SideBtnWrap> */}
           </SidebarWrapper>
       </SidebarContainer>
     </>

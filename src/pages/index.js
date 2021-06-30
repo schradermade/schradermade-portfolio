@@ -4,17 +4,74 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen)
   }
 
+  const [isBio, setIsBio] = useState(false);
+  const isBioToggle = () => {
+    if (!isBio) {
+    setIsBio(!isBio)
+    setIsTech(false)
+    setIsPortfolio(false)
+    setIsContact(false)
+    setIsOpen(!isOpen)
+    }
+  }
+
+  const [isTech, setIsTech] = useState(false);
+  const isTechToggle = () => {
+    if (!isTech) {
+    setIsTech(!isTech)
+    setIsPortfolio(false)
+    setIsBio(false)
+    setIsContact(false)
+    setIsOpen(!isOpen)
+    }
+  }
+  
+  const [isPortfolio, setIsPortfolio] = useState(false);
+  const isPortfolioToggle = () => {
+    if (!isPortfolio) {
+    setIsPortfolio(!isPortfolio)
+    setIsBio(false)
+    setIsTech(false)
+    setIsContact(false)
+    setIsOpen(!isOpen)
+    }
+  }
+
+  const [isContact, setIsContact] = useState(false);
+  const isContactToggle = () => {
+    if (!isContact) {
+    setIsContact(!isContact)
+    setIsBio(false)
+    setIsTech(false)
+    setIsPortfolio(false)
+    setIsOpen(!isOpen)
+    }
+  }
+
   return (
     <>
-    <Sidebar isOpen={isOpen} toggle={toggle} />
-    <Navbar toggle={toggle} isOpen={isOpen} />
-    <HeroSection />
+    <Sidebar 
+      isOpen={isOpen} toggle={toggle} 
+      isBioToggle={isBioToggle}
+      isPortfolioToggle={isPortfolioToggle}
+      isTechToggle={isTechToggle}
+      isContactToggle={isContactToggle}
+      />
+    <Navbar  
+      isOpen={isOpen} toggle={toggle}
+    />
+    <HeroSection 
+      isBio={isBio}
+      isPortfolio={isPortfolio}
+      isTech={isTech}
+      isContact={isContact}
+      />
     </>
   )
 }

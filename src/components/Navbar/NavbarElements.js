@@ -6,11 +6,12 @@ export const Nav = styled.nav`
   // background: #7FFFD4;
   background-image: linear-gradient(#A88FE7, #F19EEE);
   height: 110px;
+  width: 100vw;
   // margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -46,18 +47,36 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #5271FE;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
 `;
 
 export const NavSubLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: flex;
   align-items: center;
+  margin-top: 5px;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  color: #5271FE;
+
+  &:hover {
+    color: #fff;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: .75;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -72,6 +91,11 @@ export const MobileIcon = styled.div`
     font-size: 2.8rem;
     cursor: pointer;
     color: #5271FE;
+  }
+
+  &:hover {
+    // color: white;
+    opacity: 75%;
   }
 `;
 
@@ -91,13 +115,22 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #5271FE;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 1000pxx) {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: #fff
+  }
 
   &.active {
     border.bottom: 3px solid #01bf71;
