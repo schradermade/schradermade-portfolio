@@ -3,8 +3,11 @@ import {
   BioContainer,
   BioHover,
   BioInvis,
+  BioPic,
 }
 from './BioElement';
+import SelfPic from '../../images/BioPic.jpeg';
+
 
 const Bio = () => {
 
@@ -41,6 +44,7 @@ const Bio = () => {
         <BioHover>MOBILE</BioHover>
         <BioInvis>.</BioInvis>
         <BioHover>DEVELOPMENT</BioHover>
+        <BioPic src={SelfPic} />
       </BioContainer>
     </>
   )

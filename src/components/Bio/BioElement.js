@@ -20,3 +20,14 @@ export const BioHover = styled.p`
 export const BioInvis = styled.p`
   opacity: 0%;
 `
+
+export const BioPic = styled.img`
+  height: 300px;
+  width: 255px;
+  border-radius: 50px;
+  margin-top: 25px;
+
+  &:hover {
+    opacity: 75%;
+  }
+`
