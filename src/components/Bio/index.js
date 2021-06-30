@@ -12,33 +12,35 @@ const Bio = () => {
   return (
     <>
       <BioContainer>
-        <BioHover>Hi,</BioHover>
+        <BioHover>HI,</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>I'm</BioHover>
+        <BioHover>I'M</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>Nathan,</BioHover>
+        <BioHover>NATHAN</BioHover>
+      </BioContainer>
+      <BioContainer>
         <BioInvis>.</BioInvis>
-        <BioHover>a</BioHover>
+        <BioHover>A</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>front</BioHover>
+        <BioHover>FRONT</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>end</BioHover>
+        <BioHover>END</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>engineer</BioHover>
+        <BioHover>ENGINEER</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>specializing</BioHover>
+        <BioHover>SPECIALIZING</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>in</BioHover>
+        <BioHover>IN</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>ReactJS</BioHover>
+        <BioHover>REACT</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>web</BioHover>
+        <BioHover>WEB</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>and</BioHover>
+        <BioHover>AND</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>mobile</BioHover>
+        <BioHover>MOBILE</BioHover>
         <BioInvis>.</BioInvis>
-        <BioHover>applications.</BioHover>
+        <BioHover>DEVELOPMENT</BioHover>
       </BioContainer>
     </>
   )

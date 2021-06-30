@@ -4,7 +4,8 @@ export const BioContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  margin-bottom: 40px;
+
 `
 
 export const BioHover = styled.p`
