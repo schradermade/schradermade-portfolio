@@ -17,7 +17,9 @@ const Home = () => {
     setIsTech(false)
     setIsPortfolio(false)
     setIsContact(false)
-    setIsOpen(!isOpen)
+    if (isOpen) {
+      setIsOpen(!isOpen)
+    }
     }
   }
 
@@ -28,7 +30,9 @@ const Home = () => {
     setIsPortfolio(false)
     setIsBio(false)
     setIsContact(false)
-    setIsOpen(!isOpen)
+    if (isOpen) {
+      setIsOpen(!isOpen)
+    }
     }
   }
   
@@ -39,7 +43,9 @@ const Home = () => {
     setIsBio(false)
     setIsTech(false)
     setIsContact(false)
-    setIsOpen(!isOpen)
+    if (isOpen) {
+      setIsOpen(!isOpen)
+    }
     }
   }
 
@@ -50,7 +56,9 @@ const Home = () => {
     setIsBio(false)
     setIsTech(false)
     setIsPortfolio(false)
-    setIsOpen(!isOpen)
+    if (isOpen) {
+      setIsOpen(!isOpen)
+    }
     }
   }
 
@@ -64,7 +72,12 @@ const Home = () => {
       isContactToggle={isContactToggle}
       />
     <Navbar  
-      isOpen={isOpen} toggle={toggle}
+      isOpen={isOpen} 
+      toggle={toggle}
+      isBioToggle={isBioToggle}
+      isTechToggle={isTechToggle}
+      isPortfolioToggle={isPortfolioToggle}
+      isContactToggle={isContactToggle}
     />
     <HeroSection 
       isBio={isBio}

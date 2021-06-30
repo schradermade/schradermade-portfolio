@@ -14,7 +14,14 @@ import {
   NavBtnLink,
 } from './NavbarElements';
 
-const Navbar = ({toggle, isOpen}) => {
+const Navbar = ({
+                toggle, 
+                isOpen,
+                isBioToggle,
+                isTechToggle,
+                isPortfolioToggle,
+                isContactToggle,
+                }) => {
 
   const [hover1, setHover1] = useState(false);
   const [hover2, setHover2] = useState(false);
@@ -53,16 +60,34 @@ const Navbar = ({toggle, isOpen}) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">BIO</NavLinks>
+              <NavLinks 
+                to="bio"
+                onClick={isBioToggle}
+                >BIO</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="techskills">TECH SKILLS</NavLinks>
+              <NavLinks 
+                to="techskills"
+                onClick={isTechToggle}
+              >
+                TECH SKILLS
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="portfolio">PORTFOLIO</NavLinks>
+              <NavLinks 
+                to="portfolio"
+                onClick={isPortfolioToggle}
+              >
+                  PORTFOLIO
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">CONTACT</NavLinks>
+              <NavLinks 
+                to="contact"
+                onClick={isContactToggle}
+              >
+                CONTACT
+              </NavLinks>
             </NavItem>
           </NavMenu>
           {/* <NavBtn>
